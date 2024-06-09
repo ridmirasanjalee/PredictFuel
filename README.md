@@ -1,0 +1,9 @@
+In these types of machine learning problems to predict fuel efficiency, we aim to predict the output of a continuous value, such as a price or a probability. In this article, I will take you through how we can predict Fuel Efficiency with Machine Learning.
+
+Here I will use one of the famous datasets among machine learning practitioners, Auto MPG dataset to create a model to predict fuel efficiency of vehicles in the late 1970s and early 1980s. To do this, we will provide the model with a description of many automobiles from this period. This description includes attributes such as cylinders, displacement, horsepower and weight. Here i explain the steps shortly.
+
+ First import the necessary libraries to get started with this task. Now, the next thing to do is to download the dataset. Now, let’s import the data using the pandas package. Then, let’s split the data into training and test sets as train dataset and test dataset.Now, I will separate the target values from the features in the dataset. This label is that feature that I will use to train the model to predict fuel efficiency.
+
+After we have to normalized the data for that,It is recommended that you standardize features that use different scales and ranges. Although the model can converge without standardization of features, this makes learning more difficult and makes the resulting model dependent on the choice of units used in the input. We need to do this to project the test dataset into the same distribution the model was trained on.
+
+Next step is Build the model, I will use the sequential API with two hidden layers and one output layer that will return a single value. After the build model we have to train the model to predict to fuel efficiency. After training process we can get predicted values from model to fuel efficiency.
